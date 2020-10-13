@@ -16,13 +16,12 @@ string msgText;
  
 string Resp;
 
+string Resp1;
+
  
 /*string ArtLiterature[5] = {"Who wrote Twilight series of novels?","Who wrote the poem 'The Owl and the Pussycat'?","Who wrote the novel Revolutionary Road, which was made into a successful feature film?","In the Adrian Mole Diaries, what is the surname of his girlfriend?","What word does the bird constantly repeat in Edgar Allan Poe`s classic poem The Raven?"};
-
 string ArtLiteratureAns[28] = {"Stephenie Meyer","stephenie Meyer","Stephenie meyer","stephenie meyer","Mrs.meyer","mrs.meyer","Mrs.Meyer","Mrs.meyer","Edward Lear","edward lear","Edward lear","edward Lear","Mr.Lear","Mr.lear","mr.lear","mr.Lear","Richard Yates","Richard yates","richard Yates","richard yates","Mr.yates","Mr.Yates","mr.yates","mr.Yates","Braiwaithe","braiwaithe","Nevermore","nevermore"};
-
 string GKquestion[5] = {"What is the only anagram of the word `english`?","In the board game Risk, what colour is Europe?","What is sciophobia the fear of?","In what American state was Barack Obama born?","Affenpinscher, Keeshond and Leonberger are all types of what?"};
-
 string GKquestionAns[10] = {"shingle","Shingle","blue","Blue","shadow","Shadow","Hawaii","hawaii","dog","Dog"};
 */ 
   void
@@ -242,15 +241,15 @@ cout << "You are in a bad mood" << endl;
 cout <<
 	"You are in a good mood....hmm...Can you tell me specifically what interesting happened today?"
 	<< endl;
+   
+   state = state + 1;
       
-cin >> Resp;
-      
-state = state + 1;
-      
+cin >> Resp1;
+            
 if (state == 1)
 	{
 	  
-if (Resp != "bmn" || Resp != "")
+if (Resp1 != "bmn" || Resp != "")
 	    {
 	      
  
@@ -260,7 +259,7 @@ cout << "oh great!ok bye!" << endl;
 }
 	  else
 	    {
-	      
+
  
 cout << "huh?anyaways bye!" << endl;
 	    
@@ -293,5 +292,3 @@ SentimentCheck ();
 return 0;
 
 }
-
-
